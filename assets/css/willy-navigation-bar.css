@@ -52,5 +52,5 @@ header > a {
 
 @font-face {
     font-family: 'courageRoad';
-    src: url('./Ressources/CourageRoad.otf');
+    src: url('assets/fonts/CourageRoad.otf');
 }
