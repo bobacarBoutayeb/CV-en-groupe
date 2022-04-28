@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style_Alix.css">
+    <title>Contacter Alix Thoreau</title>
+</head>
+
+<body>
+    <!-- ------------------ -->
+    <!-- Partie haute du CV -->
+    <!-- ------------------ -->
+    <header>
+
+        <!-- -------------------------- -->
+        <!-- Titre et description du CV -->
+        <div class="titreCV">
+            <h1 class="centrer">Alix THOREAU</h1>
+            <p class="description centrer">Ingénieure spécialisée dans le <b>traitement de données</b>, je
+                suis <b>autonome</b> et <b>rigoureuse</b>. <br> J’ai intégré le <b>Campus
+                    Numérique in the Alps</b> de Grenoble pour mener à bien <br>
+                ma reconversion dans le numérique.
+            </p>
+        </div>
+
+        <!-- --------------- -->
+        <!-- Photo de Profil -->
+        <div class="divPhoto centrer">
+            <img class="photoProfil" src="assets/img/PP_Alix.jpg" alt="Photo de Alix Thoreau">
+        </div>
+    </header>
+
+    <!-- ----------------------------------- -->
+    <!-- Barre de Navigation entre mes pages -->
+    <!-- ----------------------------------- -->
+    <ul class="navigation">
+        <li><a href="index_Alix.html">Mon CV</a></li>
+        <li><a href="hobby_Alix.html">Mes hobbies</a></li>
+        <li><a href="contact_Alix.html">Contactez moi!</a></li>
+    </ul>
+
+    <!-- ------------------------------------------ -->
+    <!-- Partie basse page 3: Formulaire de contact -->
+    <!-- ------------------------------------------ -->
+
+    <div class="basContact centrer">
+        <p class="ajoutPadding">Envoyez moi un mail en cliquant directement <a
+                href="mailto:alix.thoreau@le-campus-numerique.fr">ici</a>
+            <br>ou bien en complétant ce formulaire de contact!
+        </p>
+        <form action="https://httpbin.org/get" method="get">
+            <div>
+                <label class="labelText" for="name">Nom : <span class="indicRequis">*</span></label>
+                <input class="inputText" type="text" id="name" name="user_name" required>
+            </div>
+            <div>
+                <label class="labelText" for="pronouns">Pronom(s) :</label>
+                <input class="inputText" type="text" id="pronouns" name="user_pronouns">
+            </div>
+            <div>
+                <label class="labelText" for="mail">e-mail : <span class="indicRequis">*</span></label>
+                <input class="inputText" type="email" id="mail" name="user_mail" required>
+            </div>
+            <div>
+                <label class="labelText" for="number">Tel. :</label>
+                <input class="inputText" type="tel" id="number" name="user_number"
+                    pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}">
+                <p class="requis">format: 01 23 45 67 89</p>
+
+            </div>
+            <div>
+                <label class="labelText" for="subject">Objet : <span class="indicRequis">*</span></label>
+                <select class="inputText" id="subject" name="user_subject" required>
+                    <option value="" disabled selected> --- </option>
+                    <option value="embauche">Me proposer une opportunité d'embauche</option>
+                    <option value="reconversion">Questions sur ma reconversion</option>
+                    <option value="JDR">Me proposer une place autour d'une table de JDR</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label class="labelText" for="msg">Message :</label>
+                <textarea class="inputText" id="msg" name="user_message"></textarea>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Vous préférez que je vous recontacte par :</legend>
+                    <p>
+                        <label class="form-control">
+                            <input type="radio" name="contact" value="mail">
+                            e-mail
+                        </label>
+                        <label class="form-control">
+                            <input type="radio" name="contact" value="tel">
+                            téléphone
+                        </label>
+                    </p>
+                </fieldset>
+            </div>
+
+
+            <div>
+                <button type="submit">Envoyer le message</button>
+            </div>
+
+            <p class="requis">* champs requis</p>
+        </form>
+    </div>
+</body>
+
+</html>
