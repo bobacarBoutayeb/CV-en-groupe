@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CV Bobacar BOUTAYEB</title>
+    <meta name="description" content="Curriculum Vitae">
+    <meta name="Bobacar BOUTAYEB" content="Curriculum">
+
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="js/scripts.js"></script>
+</head>
+
+<body class="container">
+    <header class="identification">
+        <figure>
+            <img src="assets/img/photo.jpg" alt="Photo de Bobacar BOUTAYEB" class="photo">
+            <figcaption class="name">
+                <h1>Bobacar BOUTAYEB</h1>
+                <h2 class="poste">Développeur Web, DevOps</h2>
+            </figcaption>
+        </figure>
+    </header>
+
+    <main class="column--left">
+        <section class="formulaire">
+            <h2>Formulaire de contact</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Tu souhaites: </legend>
+                    <label for="acheter">Acheter un service </label>
+                    <input id="acheter" type="radio" name="souhait" value="jour">
+                    <label for="vendre">Vendre un service </label>
+                    <input id="vendre" type="radio" name="souhait" value="nuit">
+                </fieldset>
+                <br>
+                <label for="pseudo">Pseudonyme</label>
+                <input required id="pseudo" type="text" name="pseudo">
+                <br>
+                <label for="email">Email</label>
+                <input required id="email" type="email" name="email">
+                <br>
+                <label for="message">Votre message</label>
+                <br>
+                <textarea placeholder="Ecrire votre message ici..." required id="message" minlength="10"
+                    maxlength="240" rows="5" cols="33" name="complainte"></textarea>
+                <div class="empressement">
+                    <label for="urgence">Niveau d'urgence</label>
+                    <br>
+                    <select name="urgence" id="urgence" required>
+                        <option value="" selected disabled hidden>---choisir---</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <br>
+                <input type="submit" value="Envoyer">
+            </form>
+            <br>
+        </section>
+
+    <footer class="column--right">
+
+        <address>
+            <ul>
+                <li>
+                    <a href=""><img src="assets/img/envelope.svg" alt="mail"> codesolidaire@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <img src="assets/img/telephone-fill.svg" alt="phone">
+                    <a href="tel:+33695421619"> 06 95 42 16 19</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/CCWCw4dS8A1j7j977">
+                        <img src="assets/img/house-door-fill.svg" alt="adresse">
+                        <span>159 rue Arthur Rimbaud
+                            <br>38110 La Tour du Pin
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </address>
+
+    </footer>
+
+    </main>
+
+    <footer class="footer--home">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="hobby.html">Hobby</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
