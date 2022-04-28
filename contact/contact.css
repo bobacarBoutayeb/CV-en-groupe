@@ -1,0 +1,90 @@
+::selection {
+    background-color: var(--select-color);
+}
+
+body {
+    background-color: var(--background-color);
+    color: white;
+    margin: 0;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        font-size: small;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: larger;
+    }
+}
+
+.divForm {
+    display: flex;
+    /* border: solid 2px rgb(63, 223, 95); */
+    /* margin: 50vh; */
+    margin-top: 100px;
+    width: auto;
+    justify-content: center;
+    min-height: 803px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    border: solid;
+}
+
+.ellementForm {
+    margin: 10px;
+    padding: 10px;
+}
+
+.informationPersonnelle {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    border: solid 1px black;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: solid 1px black;
+}
+
+.type {
+    display: flex;
+    align-items: center;
+}
+
+.demande {
+    display: flex;
+}
+
+label {
+    margin: 5px;
+    padding: 4px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    min-height: 33px;
+    bottom: 0;
+    background-color: var(--header-color);
+}
+
+p {
+    text-align: center;
+}
