@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Contacter</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="../css/navigation-bar.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+
+        <a id="navlLeft" href="../index.html">
+            <h3>CV</h3>
+        </a>
+
+        <a id="navRight" href="../hobby/hobby.html">
+            <h3>Hobby</h3>
+        </a>
+    </header>
+
+    <div class="divForm">
+        <form method="post" action="https://httpbin.org/post">
+            <div class="informationPersonnelle ellementForm">
+
+                <label for="nom">
+                    Nom:
+                    <input type="text" name="nom" id="nom" placeholder="fiejfij" required>
+                </label>
+
+                <label for="prenom"> 
+                    Prenom:
+                    <input type="text" name="prenom" id="prenom" required >
+                </label>
+            </div>
+            <div class="contact ellementForm">
+                <label for="email"> 
+                    Email:
+                    <input type="email" name="email" id="email" required >
+                </label>
+
+                <label for="tel"> 
+                    Tel:
+                    <input type="tel" name="tel" id="tel" required >
+                </label>
+            </div>
+
+            <div class="type">
+                <h3>Tes qui ?</h3>
+                <label for="radioEntreprise">
+                    Entreprise
+                    <input type="radio" class="radio" name="radio" id="radioEntreprise">
+                </label>
+
+                <label for="radioParticulier">
+                    Particulier
+                    <input type="radio" class="radio" name="radio" id="radioParticulier">
+                </label>
+            </div>
+
+            <label for="demande">
+                Qua vais vous bessoins?
+                <select name="demande" id="demande">
+                    <option value="default">---</option>
+                    <option value="site">Faire un site</option>
+                    <option value="serveur">Gestion de serveur</option>
+                    <option value="algo">Creation d'algoritme</option>
+                    <option value="anime">Information sur des Animes</option>
+                </select>
+            </label>
+
+            <label for="detail" class="detail">
+                Detaille:
+                <textarea name="detail" id="detail" cols="10" rows="2"></textarea>
+            </label>
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <footer>
+        <p>
+           Me contacter: mail: "fefefe" numero: "fefef"
+        </p>
+    </footer>
+</body>
+
+</html>
