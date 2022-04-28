@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container--hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body > header > h1 {
+    text-align: center;
+}
+
+.column--left {
+    padding-left: 3rem;
+    width: auto;
+    min-width: 60%;
+}
+
+.column--right {
+    padding-left: 3rem;
+    min-width: 20%;
+    background-color: rgb(236, 203, 140);
+}
+
+.footer--home {
+    display: flex;
+    padding-left: 3rem;
+    width: 100%;
+}
+
+.footer--hobby {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Roboto;
+}
+
+.identification {
+    background-color: rgb(202, 240, 202);
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+body > header {
+    width: 100%;
+}
+
+.photo {
+    padding: 0.5rem;
+    max-width: 120px;
+    border-radius: 10%;
+}
+
+h3 {
+    width: 100%;
+}
+
+.hard--skills, .soft--skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hard--skills__list, .hard--skills__details {
+    min-width: 47.5%;
+}
+
+.hard--skills__list {
+    color: orange;
+    font-weight: bold;
+}
+
+.soft--skills > table {
+    color: green;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+.real, .xp {
+    margin-right: 1rem;
+}
+
+li > ul {
+    margin: 0.2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.languages h5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.level {
+    width: 2rem;
+}
+
+.label {
+    width: 100%;
+}
+
+.formulaire {
+    padding: 1rem;
+    margin: 1rem;
+    border: solid;
+}
