@@ -1,61 +1,71 @@
-<!doctype html>
-
-<html lang="fr">
+<!DOCTYPE html>
+<html lang=fr>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Loisirs de Bobacar BOUTAYEB</title>
-    <meta name="description" content="Curriculum Vitae">
-    <meta name="Bobacar BOUTAYEB" content="Curriculum">
-
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
-    <meta property="og:image" content="image.png">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <script src="js/scripts.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Hobbies d'Alix Thoreau</title>
 </head>
 
-<body class="container--hobby">
+<body>
+    <!-- ------------------ -->
+    <!-- Partie haute du CV -->
+    <!-- ------------------ -->
     <header>
-        <h1>MA PASSION</h1>
+
+        <!-- -------------------------- -->
+        <!-- Titre et description du CV -->
+        <div class="titreCV">
+            <h1 class="centrer">Alix THOREAU</h1>
+            <p class="description centrer">Ingénieure spécialisée dans le <b>traitement de données</b>, je
+                suis <b>autonome</b> et <b>rigoureuse</b>. <br> J’ai intégré le <b>Campus
+                    Numérique in the Alps</b> de Grenoble pour mener à bien <br>
+                ma reconversion dans le numérique.
+            </p>
+        </div>
+
+        <!-- --------------- -->
+        <!-- Photo de Profil -->
+        <div class="divPhoto centrer">
+            <img class="photoProfil" src="static/Images/PP.jpg" alt="Photo de Alix Thoreau">
+        </div>
     </header>
 
-    <main>
-        <header>
-            <p class="intro">
-                Religion issue du monde arabe:
+    <!-- ----------------------------------- -->
+    <!-- Barre de Navigation entre mes pages -->
+    <!-- ----------------------------------- -->
+
+    <ul class="navigation">
+        <li><a href="index.html">Mon CV</a></li>
+        <li><a href="Hobby.html">Mes hobbies</a></li>
+        <li><a href="contact.html">Contactez moi!</a></li>
+    </ul>
+
+    <!-- ---------------------------- -->
+    <!-- Partie basse page 2: Hobbies -->
+    <!-- ---------------------------- -->
+
+    <div class="basHobbies centrer">
+        <div class="ajoutPadding">
+            <p> De part mon parcours universitaire, je m'intéresse beaucoup à l'écologie et à comment, depuis ma
+                petite échelle de citoyenne, je peux aider à protéger notre environnement.
+                Cela passe en grande partie par mes choix de consommation au quotidien : je me tiens éloignée de la
+                fast-fashion, préférant acheter peu et de seconde main.
+                C'est pourquoi j'aime tout particulièrement faire des brocantes et fouiller le site leboncoin : j'y
+                trouve par exemple de quoi meubler mon intérieur à moindre coût et moindre empreinte carbone.
             </p>
-        </header>
+            <p> J'ai cependant un péché mignon pas écolo du tout : du 100% plastique acheté neuf... Au moins, vu le
+                prix, je ne m'autorise ce plaisir qu'une fois par an environ.
+                Je parle bien evidemment des célèbres legos, que le youtubeur Bricksie vous présentent dans la vidéo
+                ci-dessous. </p>
+        </div>
 
-        <section>
-            <h2>Vidéo :</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MVrqX73MG_8"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </section>
+        <iframe class="responsiveIFrame" src="https://www.youtube.com/embed/rwFrMSKLXFI"
+            title="Vidéo présentant la collection de Lego par Bricksie" allowfullscreen>
+        </iframe>
+    </div>
 
-        <footer class="footer--hobby">
-            <nav>
-                <a href="index.html">Accueil</a>
-                <a href="hobby.html">Hobby</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </footer>
-    </main>
+
 </body>
 
 </html>
